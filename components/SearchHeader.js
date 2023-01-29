@@ -4,6 +4,7 @@ import { useRef } from 'react'
 import { useRouter } from 'next/router'
 import User from '../components/User'
 import {SearchIcon,MicrophoneIcon,XIcon} from '@heroicons/react/solid'
+import SearchHeaderOptions from './SearchHeaderOptions'
 // import search from '../pages/search'
 const SearchHeader = () => {
     const searchInputRef = useRef(null);
@@ -12,7 +13,7 @@ const SearchHeader = () => {
         event.preventDefault();
         const term = searchInputRef.current.value;
         if(!term.trim()) return;
-        router.push(`/search?term=${term.trim()}`);
+        router.push(`/search?term=${term.trim()}@searchType=`);
     }
   return (
     <header className='sticky top-0 bg-white'>
@@ -27,6 +28,7 @@ const SearchHeader = () => {
 </form>
 <User className="ml-auto whitespace-nowrap" />
 </div>
+<SearchHeaderOptions/>
     </header>
   )
 }
