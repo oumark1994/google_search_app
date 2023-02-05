@@ -5,7 +5,7 @@ import SearchResults from '../components/SearchResults'
 import { useRouter } from 'next/router'
 
 const search = ({results}) => {
-  console.log(results)
+  // console.log(results)
   const router = useRouter()
   return (
     <div>
