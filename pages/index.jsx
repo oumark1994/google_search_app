@@ -32,7 +32,7 @@ export default function Home() {
       </Head>
 <Header/>
 <form  className="flex flex-col items-center mt-50">
-  <Image width="300" objectFit='cover' height="100" src="https://techcrunch.com/wp-content/uploads/2015/10/screen-shot-2015-10-08-at-4-20-16-pm.png"/>
+  <Image width="300" alt='google image' objectFit='cover' height="100" src="https://techcrunch.com/wp-content/uploads/2015/10/screen-shot-2015-10-08-at-4-20-16-pm.png"/>
   <div className=" flex w-full mt-5 mx-auto max-w-[90%] border border-gray-200 hover:shadow-lg focus-within:shadow-lg py-3 px-5 rounded-full items-center sm:max-w-lg lg:max-w-2xl ">
     <SearchIcon className="h-5 text-gray-500 mr-3"/>
     <input ref={searchInputRef} type="text" className='flex-grow focus:outline-none'/>
