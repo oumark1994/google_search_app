@@ -1,7 +1,9 @@
 import React from 'react'
-import Link from 'next/Link'
+// import Link from 'next/Link'
+Link
 import { ChevronLeftIcon,ChevronRightIcon } from '@heroicons/react/solid'
 import { useRouter } from 'next/router'
+import Link from 'next/link'
 const PaginationButtons = () => {
     const router = useRouter()
     const startIndex = Number(router.query.start) || 1;
