@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Footer from 'components/Footer'
 import {useRouter} from 'next/router'
 import { useRef } from 'react'
+import Feed from '../components/Feed'
 import {SearchIcon,MicrophoneIcon} from '@heroicons/react/solid'
 export default function Home() {
   const router = useRouter();
