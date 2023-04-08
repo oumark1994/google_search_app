@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/Link'
 
 import { ChevronLeftIcon,ChevronRightIcon } from '@heroicons/react/solid'
 import { useRouter } from 'next/router'
